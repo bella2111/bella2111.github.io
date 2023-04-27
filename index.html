@@ -4,11 +4,15 @@
     <head>
         <link rel="stylesheet" href="index.css"> <meta charset="UTF-8">
     </head>
+    
  <body>
-    <h1 style="color:rgb(131, 9, 78); padding-left: 270px;"><span style='font: size 50px;'>&#128525;   </span>Balou <span style='font: size 50px;px;'>&#128021;</span></h1>
+    
+            
+    <div class="image-container">
+        <h1 style="color:rgb(131, 9, 78); "><span style='font: size 50px;'>&#128525;   </span>Balou <span style='font: size 50px;px;'>&#128021;</span></h1>
       
 
-        <ul class="list">
+    <ul class="list">
           <li>Name: Balou Kingdom of Silverwolves</li>
           <li>Rasse:Labrador Retviever</li>  
           --> <a href="https://de.wikipedia.org/wiki/Labrador_Retriever">mehr über den Labrador Retviever </a>
@@ -17,11 +21,72 @@
           <li>Lieblingsessen: Käse</li>
           <li>Erziehung: viel Geduld</li>
             --> <a href="https://www.youtube.com/watch?v=Th1UCl-MDXQ">die besten 7 Tricks</a>
-        </ul> 
-            
-            
+    </ul>
+       <img src="https://modern-dogs.de/wp-content/uploads/2021/03/silberner-labrador-678x381.jpg" width="175" height="100"/>
+    </div>
       
-        <img src="https://modern-dogs.de/wp-content/uploads/2021/03/silberner-labrador-678x381.jpg" width="175" height="100"/>
+    <button onclick="playAudio()" type="button">Play Audio</button>
+        <audio id="myAudio">
+        <source src="bark.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <style>
+        div.gallery {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 180px;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="gallery">
+            <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=480x10000:format=jpg/path/s5cab7356b75d1610/image/i7073588af022a0db/version/1478759180/silberner-labrador.jpg" width="600" height="400">
+          <div class="desc">Add a description of the image here</div>
+        </div>
+        
+        <div class="gallery">
+            <img src="http://www.vom-wiesbachtal.de/resources/ayka-welpen-spiel1.JPG" width="600" height="400">
+          <div class="desc">Add a description of the image here</div>
+        </div>
+        
+        <div class="gallery">
+            <img src="https://labradore-of-silvershine.de/images/6872.jpg" alt="Northern Lights" width="600" height="400">
+          <div class="desc">Add a description of the image here</div>
+        </div>
+        
+        <div class="gallery">
+            <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=480x10000:format=jpg/path/s5cab7356b75d1610/image/i68b658e0f2d62691/version/1584628155/image.jpg" alt="Mountains" width="600" height="400">
+          <div class="desc">Add a description of the image here</div>
+        </div>
+        
+        <script>
+            var x = document.getElementById("myAudio"); 
+            
+            function playAudio() { 
+              x.play(); 
+            } 
+            
+            function pauseAudio() { 
+              x.pause(); 
+            } 
+            </script>
+
 
     </body>
 </html>
